@@ -1,0 +1,54 @@
+.container {
+    background-color: #fffaf3;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ff7a59;
+    margin-bottom: 2rem;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.record-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.record-table th,
+.record-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.record-table th {
+    background-color: #ffe8db;
+    color: #333;
+}
+
+.edit-btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ff7a59;
+}
+
+.edit-btn:hover {
+    color: #ff603e;
+}
+
+.pagination {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}

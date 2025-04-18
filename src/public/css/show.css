@@ -1,0 +1,48 @@
+.show-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+.show-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.record-detail p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.actions a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.back-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.edit-btn {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #008ecc;
+}
