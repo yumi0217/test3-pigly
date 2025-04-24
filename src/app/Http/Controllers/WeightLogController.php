@@ -18,12 +18,12 @@ class WeightLogController extends Controller
             ->orderBy('date', 'desc')
             ->paginate(10);
 
-        // 表示用の整形済みプロパティを追加
         foreach ($weightLogs as $log) {
             $log->date_display = Carbon::parse($log->date)->format('Y年m月d日');
             $log->weight_display = number_format($log->weight, 1) . ' kg';
             $log->exercise_time_display = $log->exercise_time
-                ? Carbon::createFromTimeString($log->exercise_time)->format('H時間i分')
+                ? (floor($log->exercise_time / 60) ? floor($log->exercise_time / 60) . '時間' : '') .
+                ($log->exercise_time % 60 ? $log->exercise_time % 60 . '分' : '')
                 : '-';
         }
 
